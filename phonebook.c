@@ -109,7 +109,7 @@ int main(void){
     int result=-1;
     
     //absolute path:/Users/jominjae/Desktop/input1.txt"
-    fp=fileOpen("/Users/jominjae/Desktop/input1.txt", "r");
+    fp=fileOpen("input1.txt", "r");
     if(fp==NULL) printf("file open miss\n");
 
     fscanf(fp, "%d", &dNum);
@@ -130,9 +130,10 @@ int main(void){
     }
     
     //absolute path:/Users/jominjae/Desktop/output1.txt"
-    wf = fopen("/Users/jominjae/Desktop/output1.txt", "w");
+    wf = fopen("output1.txt", "w");
     fprintf(wf, "%d", result);
     fclose(wf);
 
     return 0;
 }
+

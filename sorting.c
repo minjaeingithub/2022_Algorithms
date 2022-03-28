@@ -52,7 +52,7 @@ int main() {
     FILE *fp;
     FILE *wf;
     //absolute path:/Users/jominjae/Desktop/input2.txt"
-    fp=fileOpen("/Users/jominjae/Desktop/input2.txt", "r");
+    fp=fileOpen("input2.txt", "r");
 
     if(fp==NULL) printf("file open miss\n");
 
@@ -62,7 +62,7 @@ int main() {
     printf("done");
 
     //absolute path:/Users/jominjae/Desktop/output2.txt"
-    wf = fopen("/Users/jominjae/Desktop/output2.txt", "w");
+    wf = fopen("output2.txt", "w");
     fprintf(wf, "%d", k);
     fclose(wf);
 
